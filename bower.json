@@ -5,6 +5,10 @@
     "Zach Schneider <schneidmaster@gmail.com>"
   ],
   "description": "Free, simple embeddable Instagram widget.",
+  "main": [
+    "dist/production.min.css",
+    "dist/production.min.js"
+  ],
   "keywords": [
     "instagram",
     "embed",
