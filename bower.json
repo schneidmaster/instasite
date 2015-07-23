@@ -1,0 +1,27 @@
+{
+  "name": "instasite",
+  "version": "1.0.0",
+  "authors": [
+    "Zach Schneider <schneidmaster@gmail.com>"
+  ],
+  "description": "Free, simple embeddable Instagram widget.",
+  "keywords": [
+    "instagram",
+    "embed",
+    "site"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/schneidmaster/instasite",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bass": "~1.2.1",
+    "basscss": "~7.0.2",
+    "jquery": "~2.1.4"
+  }
+}
