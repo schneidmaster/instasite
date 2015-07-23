@@ -6,7 +6,7 @@ Free, simple embeddable Instagram widget.
 
 ## Usage
 
-1. The widget uses [BassCSS](http://www.basscss.com/). The minified version (11KB) is provided in `dist/production.min.css' as a convenience; if your site already uses BassCSS, you're all set.
+1. The widget uses [BassCSS](http://www.basscss.com/). The minified version (11KB) is provided in `dist/production.min.css` as a convenience; if your site already uses BassCSS, you're all set.
 2. Grab `dist/production.min.js` and include it in your site. If you already have jQuery as a dependency, you can just grab `dist/production.lite.min.js` instead.
 3. Create a blank div and initialize the plugin with jQuery:
 
