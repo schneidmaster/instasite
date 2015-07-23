@@ -2,6 +2,8 @@
 
 Free, simple embeddable Instagram widget.
 
+![Instawidget Screenshot](https://cloud.githubusercontent.com/assets/1896112/8843217/a342d5fc-30cb-11e5-95a5-ba2e8f82a73e.png)
+
 ## Usage
 
 1. The widget uses [BassCSS](http://www.basscss.com/). The minified version (11KB) is provided in `dist/production.min.css' as a convenience; if your site already uses BassCSS, you're all set.
