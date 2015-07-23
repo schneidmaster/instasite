@@ -1,0 +1,49 @@
+#instawidget-container {
+  .instawidget-box {
+    float: left;
+    padding: .5rem;
+    box-sizing: border-box;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .pagination {
+    text-align: center;
+
+    button {
+      display: inline-block;
+      line-height: 1.125rem;
+      padding: .5rem 1rem;
+      border: 1px solid transparent;
+      vertical-align: middle;
+      -webkit-appearance: none;
+      border-radius: 3px;
+      color: #111;
+      background-color: rgba(0,0,0,.0625);
+      margin: 0;
+      margin-bottom: .5rem;
+
+      &.mr2 { margin-right: 1rem };
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
+      }
+    }
+  }
+
+  @media (min-width: 40em) {
+    .instawidget-box {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 52em) {
+    .instawidget-box {
+      width: 25%;
+    }
+  }
+}

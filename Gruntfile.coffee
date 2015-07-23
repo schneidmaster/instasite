@@ -2,11 +2,6 @@ path = require('path')
 escapeChar = process.platform.match(/^win/) ? '^' : '\\'
 cwd = process.cwd().replace(/( |\(|\))/g, escapeChar + '$1')
 
-# css files to concat/minify
-cssToConcat = [
-    'bower_components/basscss/css/basscss.css'
-  ]
-
 # js files to concat/minify
 jsToConcat = [
   'bower_components/jquery/dist/jquery.min.js'
@@ -33,7 +28,20 @@ module.exports = (grunt) ->
       '.tmp/public/**'
       'built'
     ]
- 
+
+    # grunt sass
+    sass:
+      compile:
+        options:
+          style: 'expanded'
+        files: [
+          expand: true
+          cwd: 'scss'
+          src: ['**/*.scss']
+          dest: '.tmp/css'
+          ext: '.css'
+        ]
+
     # grunt coffee
     coffee:
       compile:
@@ -48,9 +56,6 @@ module.exports = (grunt) ->
       js:
         src: jsToConcat
         dest: '.tmp/concat/production.js'
-      css:
-        src: cssToConcat
-        dest: '.tmp/concat/production.css'
 
     # grunt uglify
     uglify:
@@ -64,7 +69,7 @@ module.exports = (grunt) ->
     # grunt cssmin
     cssmin:
       dist:
-        src: ['bower_components/basscss/css/basscss.css']
+        src: ['.tmp/css/*.css']
         dest: 'dist/production.min.css'
 
     # grunt watch
@@ -87,6 +92,7 @@ module.exports = (grunt) ->
   grunt.registerTask 'default', [
     'clean'
     'shell'
+    'sass'
     'coffee'
     'concat'
     'uglify'

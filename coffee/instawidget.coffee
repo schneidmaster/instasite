@@ -43,14 +43,14 @@
       # Create container and add images.
       container = $("<div id='instawidget-container' class='clearfix'>")
       for img in set.data
-        imgDiv = $('<div class="sm-col sm-col-6 md-col-3 p1">')
+        imgDiv = $("<div class='instawidget-box'>")
         imgDiv.append $("<a href='#{img.link}' target='_blank'><img src='#{img.images.standard_resolution.url}' /></a>")
         container.append imgDiv
 
       # Create prev/next buttons.
-      pagDiv = $("<div class='center'>")
-      pagDiv.append $("<a href='#' class='iw-prev'><button class='btn btn-primary mb1 mr2 black bg-darken-1'>Previous</button></a>") if @activeSet > 0
-      pagDiv.append $("<a href='#' class='iw-next'><button class='btn btn-primary mb1 black bg-darken-1'>Next</button></a>") if set.pagination.next_url
+      pagDiv = $("<div class='pagination'>")
+      pagDiv.append $("<button class='iw-prev mr2'>Previous</button>") if @activeSet > 0
+      pagDiv.append $("<button class='iw-next'>Next</button>") if set.pagination.next_url
       container.append pagDiv unless pagDiv.is(':empty')
 
       # Replace existing container (if any) and add new one.
