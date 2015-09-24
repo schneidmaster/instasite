@@ -1,5 +1,5 @@
 {
-  "name": "instasite",
+  "name": "instawidget",
   "version": "1.0.0",
   "description": "Free, simple embeddable Instagram widget.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/schneidmaster/instasite"
+    "url": "https://github.com/schneidmaster/instawidget"
   },
   "keywords": [
     "instagram",
@@ -18,9 +18,9 @@
   "author": "Zach Schneider <schneidmaster@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/schneidmaster/instasite/issues"
+    "url": "https://github.com/schneidmaster/instawidget/issues"
   },
-  "homepage": "https://github.com/schneidmaster/instasite",
+  "homepage": "https://github.com/schneidmaster/instawidget",
   "devDependencies": {
     "bower": "^1.4.1",
     "grunt": "^0.4.5",

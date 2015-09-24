@@ -1,5 +1,5 @@
 {
-  "name": "instasite",
+  "name": "instawidget",
   "version": "1.0.0",
   "authors": [
     "Zach Schneider <schneidmaster@gmail.com>"
@@ -15,7 +15,7 @@
     "site"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/schneidmaster/instasite",
+  "homepage": "https://github.com/schneidmaster/instawidget",
   "ignore": [
     "**/.*",
     "node_modules",
