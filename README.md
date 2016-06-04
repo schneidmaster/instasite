@@ -1,5 +1,7 @@
 # Instawidget
 
+**Notice**: Instagram has [shut off access](http://www.macrumors.com/2015/11/17/instagram-new-api-changes/) to its feed APIs, so this package is no longer functional. I don't see any way around this restriction, but feel free to submit a PR if you see a way for this package to work.
+
 Free, simple embeddable Instagram widget.
 
 ![Instawidget Screenshot](https://cloud.githubusercontent.com/assets/1896112/8843217/a342d5fc-30cb-11e5-95a5-ba2e8f82a73e.png)
